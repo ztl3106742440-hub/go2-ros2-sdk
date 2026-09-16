@@ -1,0 +1,58 @@
+{
+  "network_interface": "enp111s0",
+  "topics": {
+    "low_state": "rt/lowstate",
+    "sport_state": "rt/sportmodestate",
+    "point_cloud_candidates": [
+      "rt/utlidar/cloud",
+      "rt/utlidar/cloud_deskewed"
+    ]
+  },
+  "safety": {
+    "slow_pitch_deg": 5.0,
+    "stop_pitch_deg": 15.0,
+    "slow_roll_deg": 8.0,
+    "stop_roll_deg": 18.0,
+    "normal_speed_mps": 0.3,
+    "slow_speed_mps": 0.15,
+    "state_timeout_s": 0.5,
+    "cloud_timeout_s": 0.7
+  },
+  "lidar": {
+    "forward_axis": "x",
+    "left_axis": "y",
+    "up_axis": "z",
+    "forward_sign": 1.0,
+    "left_sign": 1.0,
+    "up_sign": 1.0,
+    "min_height_m": -0.05,
+    "max_height_m": 0.35,
+    "min_range_m": 0.3,
+    "max_range_m": 4.0,
+    "front_half_width_m": 0.35,
+    "side_inner_m": 0.2,
+    "side_outer_m": 1.1,
+    "distance_percentile": 10.0,
+    "minimum_points": 5,
+    "smoothing_frames": 3
+  },
+  "avoidance": {
+    "cruise_speed_mps": 0.25,
+    "slow_speed_mps": 0.12,
+    "sidestep_speed_mps": 0.22,
+    "turn_speed_radps": 0.45,
+    "slow_distance_m": 1.5,
+    "stop_distance_m": 0.9,
+    "clear_distance_m": 1.4,
+    "side_clearance_m": 0.8,
+    "decision_margin_m": 0.15,
+    "confirm_frames": 3,
+    "assess_duration_s": 0.8,
+    "turn_duration_s": 1.2,
+    "sidestep_duration_s": 1.5,
+    "pass_duration_s": 2.0,
+    "recover_duration_s": 1.5,
+    "max_state_duration_s": 8.0
+  }
+}
+

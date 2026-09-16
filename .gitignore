@@ -20,3 +20,14 @@ CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
+
+# Repository organization: generated files and local credentials
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.local
+site/
+*.egg-info/
+examples/python-sdk/outputs/*
+!examples/python-sdk/outputs/.gitkeep

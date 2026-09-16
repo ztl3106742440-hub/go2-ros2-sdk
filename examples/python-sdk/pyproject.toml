@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "go2-module1"
+version = "0.1.0"
+description = "Pure unitree_sdk2_python course framework for Go2 EDU"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.23",
+  "matplotlib>=3.6",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
